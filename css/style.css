@@ -1,0 +1,235 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+.page {
+    font-family: 'Barlow-Light';
+    background: linear-gradient(#EFF6FF, #EFF6FF );
+    padding: 75px 48px;
+    color: #2A4A5C;
+}
+.flexbox-container {
+    display: block;
+    background-color: white; 
+}
+@media (min-width: 1068px) {
+    .flexbox-container {
+        display: flex;
+        gap: 70px;
+    }
+}
+.main-content {
+    padding-top: 110px;
+    padding-right: 40px;
+    padding-bottom: 80px;
+}
+@media (max-width: 1067px) {
+    .main-content {
+        padding: 30px;
+    }
+}
+@media (max-width: 1067px) {
+    .main-image-block {
+        background: url('../img/bg.jpeg') no-repeat 0 0;
+        width: auto;
+        height: 300px;
+    }
+}
+@media (min-width: 1068px) {
+    .main-image-block {
+        background: url('../img/bg.jpeg') no-repeat 100% 100%;
+        width: 52%;
+    }
+}
+.main-content__title {
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.main-content__registr-description {
+    font-size: 16px;
+    padding-bottom: 44px;
+}
+.logo-block {
+    position: relative;
+}
+.main-image-block__logo {
+    width: 100px;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+.buttons-block {
+    display: flex;
+    gap: 20px;
+}
+@media (max-width: 659px) {
+    .buttons-block {
+        flex-direction: column;
+    }
+        
+}
+@media (min-width: 660px) {
+    .buttons-block {
+        flex-direction: row;
+    }
+}
+.button {
+    width: 206px;
+    color: #EEEEEE;
+    height: 36px;
+    font-size: 11px;
+    border: none;
+    cursor: pointer;
+    
+}
+@keyframes btn {
+    from {color: #EEEEEE;}
+    to {color: red;}
+  }
+.button:hover {
+    animation-name: btn;
+    animation-duration: 4s;
+}
+.facebook-button {
+    background:linear-gradient(#255A9B, #255A9B );
+    border: 1px solid black;
+    position: relative;
+}
+.linkedin-button{
+    background: linear-gradient(#0076B6, #0076B6 );
+    border: 1px solid #255A9B;
+    position: relative;
+}
+.buttons-block__img {
+    width: 13px;
+    position: absolute;
+    left: 15px;
+}
+.create-account {
+    color: #EEEEEE;
+    background: linear-gradient(#3698FB,#3698FB );
+    border: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 188px
+}
+.line-block {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+.line-block::before {
+    content: "";
+    width: 70px;
+    border-top: 1px solid #AFAFAF;
+    position: relative;
+    top: 6px;
+    right: 4px;
+}
+.line-block::after {
+    content: "";
+    width: 70px;
+    border-top: 1px solid #AFAFAF;
+    position: relative;
+    top: 6px;
+    left: 4px;
+}
+
+@media (max-width: 659px) {
+}
+.input-block {
+    position: relative;
+}
+.input-block__label {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 11px;
+    color: #AFAFAF;
+}
+.input {
+    height: 36px;
+    width: 210px;
+    display: block;
+    font-family: inherit;
+    height: 40px;
+    height: calc(2.5rem + 2px);
+    line-height: 1.25;
+    padding: 2rem 0.7rem 0.7rem 5px;
+}
+.input::placeholder {
+    padding-bottom: 20px;
+}
+@media (min-width: 660px) {
+    .register-form__inputs {
+        display: flex;
+        gap: 32px
+    }
+}
+
+@media (max-width: 659px) {
+    .register-form__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 32px
+    }
+}
+.radio-box-title {
+    padding-top: 30px;
+    font-size: 18px;
+    padding-bottom: 14px;
+}
+.radio-box-description {
+    font-size: 11px;
+    padding-bottom: 30px;
+}
+.register-from__about-person {
+    width: 50%;
+    box-shadow: 5px 10px 12px #AFAFAF;
+    padding: 10px;
+    font-size: 11px;
+    line-height: 1rem;
+}
+@media (max-width: 659px) {
+    .radio-box-block {
+        flex-direction: column;
+    }
+}
+.radio-box-block {
+    display: flex;
+    gap: 36px;
+    font-size: 12px;
+    padding-bottom: 30px;
+}
+.radio-box-block__item {
+    position: relative;
+}
+.radio-box-block__input {
+    padding-right: 28px;
+    position: absolute;
+    top: -3px
+}
+.radio-box-block__label {
+    padding-top: 4px;
+    padding-left: 27px;
+}
+
+.agree-checkbox-block {
+    font-size: 11px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.i_item::after {
+    content: 'Ⓘ';
+    padding-left: 7px;
+    font-size: 10px;
+}
